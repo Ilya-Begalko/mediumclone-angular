@@ -1,3 +1,4 @@
+import {HttpClientModule} from '@angular/common/http'
 import {NgModule} from '@angular/core'
 import {BrowserModule} from '@angular/platform-browser'
 
@@ -20,6 +21,7 @@ import {AuthModule} from './auth/auth.module'
       maxAge: 25,
       logOnly: environment.production,
     }),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
