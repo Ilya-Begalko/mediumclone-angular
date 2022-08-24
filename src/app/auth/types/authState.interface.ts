@@ -1,3 +1,3 @@
 export interface AuthStateInterface {
-  isSubbmitying: boolean
+  isSubmittying: boolean
 }

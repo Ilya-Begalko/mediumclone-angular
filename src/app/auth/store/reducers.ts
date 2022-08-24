@@ -3,7 +3,7 @@ import {AuthStateInterface} from '../types/authState.interface'
 import {registerAction} from './actions/register.action'
 
 const initialState: AuthStateInterface = {
-  isSubbmitying: false,
+  isSubmittying: false,
 }
 
 const authReducer = createReducer(
@@ -12,7 +12,7 @@ const authReducer = createReducer(
     registerAction,
     (state): AuthStateInterface => ({
       ...state,
-      isSubbmitying: true,
+      isSubmittying: true,
     })
   )
 )
